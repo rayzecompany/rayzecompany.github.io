@@ -4,81 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Rayze Company</title>
-  <meta name="description" content="The Rayze Company builds apps and tools.">
-  <link rel="icon" href="Rayze%20Company%20Logo.png">
-
-  <!-- Font: Host Grotesk (Google Fonts) -->
+  <meta name="description" content="The Rayze Company makes apps and games.">
+  <link rel="icon" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background: #fff;
-      color: #000;
-      font-family: "Host Grotesk", Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: #000; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    main {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
-
-    /* Logo */
-    .logo img { width: 260px; max-width: 100%; height: auto; display: block; }
-    .logo .fallback { display: none; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; }
-
-    /* Sections */
-    section { margin-top: 72px; }
-
-    h2 {
-      font-size: 12px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding-bottom: 8px;
-      border-bottom: 1px solid #000;
-    }
-
-    ul { list-style: none; }
-
-    li {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 16px;
-      padding: 16px 0;
-      border-bottom: 1px solid #000;
-    }
-
-    .name { font-size: 20px; font-weight: 500; }
-    .desc { font-size: 14px; color: #555; }
-    .tag  { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
-
-    footer {
-      margin-top: 72px;
-      font-size: 12px;
-      color: #555;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <main>
 
-    <!-- LOGO: image file in the repo root -->
-    <header class="logo">
-      <img src="Rayze%20Company%20Logo.png" alt="The Rayze Company"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <div class="fallback">THE RAYZE COMPANY</div>
+    <header class="hero">
+      <img src="/logo.png" alt="The Rayze Company logo">
+      <p>The Rayze Company</p>
     </header>
 
     <!-- PRODUCTS: copy one <li>...</li> block to add a product -->
@@ -87,10 +25,23 @@
       <ul>
         <li>
           <div>
-            <a class="name" href="#">Arete</a>
-            <p class="desc">Fitness tracking for the science-based lifter.</p>
+            <a class="name" href="/products/arete/">Arete</a>
+            <p class="desc">A workout log that tells you what to train next.</p>
           </div>
           <span class="tag">Beta</span>
+        </li>
+        <li>
+          <div>
+            <a class="name" href="https://github.com/rayzecompany/Pure-Poker-Simulator" target="_blank" rel="noopener">Pure Poker Simulator</a>
+            <p class="desc">Texas Hold'em against characters from six TV comedies.</p>
+          </div>
+          <span class="tag">Mac · Windows</span>
+        </li>
+        <li>
+          <div>
+            <span class="name">Trickster</span>
+          </div>
+          <span class="tag">Coming soon</span>
         </li>
       </ul>
     </section>

@@ -1,0 +1,84 @@
+/* Shared styles for every page on the site. */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Host Grotesk", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+/* Homepage: logo centred on screen, name underneath */
+.hero {
+  min-height: 80vh;
+  min-height: 80svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.hero img { width: 420px; max-width: 80vw; height: auto; display: block; }
+.hero p { font-size: 18px; font-weight: 500; letter-spacing: -0.01em; }
+
+/* Sections and lists */
+section { margin-top: 72px; }
+.hero + section { margin-top: 0; }
+
+h2 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+}
+
+ul { list-style: none; }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #000;
+}
+
+.name { font-size: 20px; font-weight: 500; }
+.desc { font-size: 14px; color: #555; }
+.tag  { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
+
+footer {
+  margin-top: 72px;
+  font-size: 12px;
+  color: #555;
+}
+
+/* Product pages */
+.back { display: inline-block; margin-top: 48px; font-size: 14px; }
+.product-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-top: 64px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #000;
+}
+.product-head h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
+.about { margin-top: 24px; }
+.about p + p { margin-top: 16px; }
