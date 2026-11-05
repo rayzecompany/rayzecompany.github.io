@@ -22,16 +22,17 @@ main {
 
 /* Homepage: logo centred on screen, name underneath */
 .hero {
-  min-height: 80vh;
-  min-height: 80svh;
+  min-height: 55vh;
+  min-height: 55svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
+  padding-top: 24px;
   text-align: center;
 }
-.hero img { width: 420px; max-width: 80vw; height: auto; display: block; }
+.hero img { width: 320px; max-width: 65vw; height: auto; display: block; }
 .hero p { font-size: 18px; font-weight: 500; letter-spacing: -0.01em; }
 
 /* Sections and lists */
